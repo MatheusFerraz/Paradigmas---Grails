@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
+		<title>Sistema de Gerenciamento Acadêmico</title>
 		<style type="text/css" media="screen">
 			#status {
-				background-color: #eee;
-				border: .2em solid #fff;
+				background-color: #CDC9C9;
+				border: .2em solid #CAE1FF;
 				margin: 2em 2em 1em;
 				padding: 1em;
 				width: 12em;
@@ -72,6 +72,8 @@
 
 				#page-body {
 					margin: 0 1em 1em;
+					border: .2em solid #CAE1FF;
+
 				}
 
 				#page-body h1 {
@@ -83,34 +85,35 @@
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
-			<h1>Application Status</h1>
+			<h1>Menu Vertical</h1>
 			<ul>
-				<li>App version: <g:meta name="app.version"/></li>
-				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${GroovySystem.getVersion()}</li>
-				<li>JVM version: ${System.getProperty('java.version')}</li>
-				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-				<li>Domains: ${grailsApplication.domainClasses.size()}</li>
-				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
-				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
+				<li>Alunos</li><br>
+				<li>Cursos</li><br>
+				<li>Disciplinas</li><br>
+				<li>Ementas</li><br>
+				<li>Notas</li><br>
+				<li>Professores</li><br>
+				<li>Projetos</li><br>
 			</ul>
-			<h1>Installed Plugins</h1>
+			<h1>Informações</h1>
 			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
+				<li>Versão de nosso Aplicativo: <g:meta name="app.version"/></li>
+				<li>Versão de nosso Grails: <g:meta name="app.grails.version"/></li>
+				<li>Versão do nosso Groovy: ${GroovySystem.getVersion()}</li>
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+			<h1><center>Bem-Vindo aos Sistema Acadêmico ETB</center></h1>
+			<br><br><h1>Missão</h1>
+
+			<p>A missão do CEP-ETB é oferecer Educação Profissional para jovens e adultos na perspectiva da formação de um cidadão crítico e consciente, desenvolvendo competências, habilidades e atitudes que possibilitem o desempenho de atividades produtivas e a sua consequente inserção no mundo do trabalho.</p>
+
+			<br><br><h1>Objetivo</h1>
+
+			<p>O CEP-ETB tem como objetivo oferecer Educação Profissional Técnica de Nível Médio e Formação Inicial e Continuada de Trabalhadores, incluindo a formação ética, o desenvolvimento da autonomia intelectual, do pensamento reflexivo e da criatividade.</p>
 
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				<br><br><h2>Click em alguns dos links abaixo para realizar as operações desejadas:</h2>
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
 						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>

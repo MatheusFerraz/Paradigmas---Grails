@@ -6,17 +6,21 @@ input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1;
+	/*color: black;*/
 }
 
 /* BASE LAYOUT */
 
 html {
-	background-color: #ddd;
-	background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-	background-image: linear-gradient(top, #aaa, #ddd);
+
+	background: transparent url(../images/fundo1.jpg) repeat-y;
+
+	/*background-color: red;
+	/*background-image: -moz-linear-gradient(center top, #fff, red);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #fff));
+	background-image: linear-gradient(top, #fff, yellow);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;
 	height: 100%;
 	/* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
 	-webkit-box-sizing: border-box;
@@ -25,7 +29,7 @@ html {
 }
 
 html.no-cssgradients {
-	background-color: #aaa;
+	background-color: red;
 }
 
 .ie6 html {
@@ -48,14 +52,15 @@ body {
 }
 
 #grailsLogo {
-	background-color: #abbf78;
+	background-color: #6495ED;
+	/*background-color: #97FFFF;*/
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
 .ie7 body,
 .ie8 body {
-	border-color: #255b17;
+	border-color: #0000CD;
 	border-style: solid;
 	border-width: 0 1px;
 }
@@ -73,7 +78,7 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #48802c;
+	color: #0000CD;
 	font-weight: normal;
 	font-size: 1.25em;
 	margin: 0.8em 0 0.3em 0;
@@ -108,7 +113,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #6495ED;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -118,7 +123,7 @@ img {
 }
 
 .footer a {
-	color: #255b17;
+	color: #6495ED;
 }
 
 .spinner {
